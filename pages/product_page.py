@@ -27,7 +27,7 @@ class ProductPage(BasePage):
         self.should_be_price_of_product()
         self.should_be_add_to_cart_button()
         self.browser.find_element(*ProductPageLocators.ADD_TO_CART_BUTTON).click()
-        self.solve_quiz_and_get_code()
+        #self.solve_quiz_and_get_code()
         self.should_be_correct_buy_message()
         self.should_be_correct_price()
 
